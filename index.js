@@ -3,7 +3,7 @@
 const os = require('os')
 
 const getCpuCount = () => {
-  console.log(`CPU Count: ${os.cpus().length}`)
+  console.log(`CPU Count: ${JSON.stringify(os.cpus())}`)
 }
 
 setInterval(getCpuCount, 3000)
